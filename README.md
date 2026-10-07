@@ -8,10 +8,6 @@
 
 ---
 
-## Các bước thực hiện (chạy trên VPS, KHÔNG chạy trên máy Mac)
-
-> Nhắc: dấu nhắc phải là `...@azvps...:~#` (VPS). Nếu thấy `nguyenthekien@MacBookAir` là đang ở Mac — gõ `ssh root@160.187.229.73` trước.
-
 ### Bước 1 — Tạo trang tĩnh tại /var/www/html/
 ```bash
 sudo mkdir -p /var/www/html
@@ -98,7 +94,3 @@ sudo ss -tunlp | grep 8082            # có tiến trình nghe cổng 8082 khôn
 Phải bật app Spring Boot (hoặc systemd service của nó — chính là Bài 3) trước khi test `/api/`.
 
 ---
-
-## Nộp bài
-- **Đường dẫn GitHub:** `homework/session_07/ex4/`
-- **Nộp:** file `spring-proxy.conf` + báo cáo (ảnh/text) kết quả `nginx -t` và kết quả `curl` của `/` và `/api/health`.
